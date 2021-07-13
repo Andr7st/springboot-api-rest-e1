@@ -11,3 +11,5 @@ public class SpringBootBackendApirestApplication {
 	}
 
 }
+// this is: https://github.com/Andr7st/springboot-api-rest-e1
+// linked to: https://github.com/Andr7st/angular-api-rest-e1
