@@ -1,0 +1,11 @@
+# Andrés segura - Andr7st.
+
+Para correr el programa dirigirse a la raiz del proyecto desde la terminal
+
+1. tener instalado maven: mvn --version
+2. ejecutar el siguiente comando: $ mvn spring-boot:run
+
+Se agrega el archivo run.sh que lo ejecurta en linux, hay que desbloquearlo con el comando de desbloqueo.
+
+---
+# Andrés segura - Andr7st.
