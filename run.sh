@@ -3,7 +3,7 @@
 # https://github.com/Andr7st/index
 
 # Descomentar abajo:
-# mvn spring-boot:run
+mvn spring-boot:run
 
 #nohup java -jar Main.jar > system.out
 
