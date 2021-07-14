@@ -1,6 +1,6 @@
 /*Este archivo debe tener el nombe de 'import.sql'*/
 /*MySQL command*/
-
+/*
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Andrés','Segura','direccion@mail.to','2021-07-13');
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Cometa','Sanchez','cuadro@mail.to','2021-07-13');
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Diana','Malaga','manzana@mail.to','2021-07-14');
@@ -12,3 +12,4 @@ INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Samuel','Garc
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Luisa','Znar','arevati@mail.to','2021-07-13');
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Selma','Gonzales','casuela@mail.to','2021-07-01');
 
+*/
