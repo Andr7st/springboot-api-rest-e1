@@ -55,9 +55,7 @@ public class ClienteRestController {
 		clienteActual.setEmail(cliente.getEmail());
 		
 		return clienteService.save(clienteActual);
-		
 	}
-
 
 	@DeleteMapping({"/clientes/{id}"})
 	@ResponseStatus(HttpStatus.NO_CONTENT)
