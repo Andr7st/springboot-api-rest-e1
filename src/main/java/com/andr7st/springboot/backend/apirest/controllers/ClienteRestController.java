@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.andr7st.springboot.backend.apirest.models.entity.Cliente;
 import com.andr7st.springboot.backend.apirest.models.service.IClienteService;
 
-@CrossOrigin(origins = { "http://localhost:4200/" })
+@CrossOrigin(origins = {"http://localhost:4200"})
 @RestController
 @RequestMapping("/api")
 public class ClienteRestController {
@@ -32,7 +32,6 @@ public class ClienteRestController {
 
 	@GetMapping("/clientes")
 	public List<Cliente> index() {
-
 		return clienteService.findAll();
 	}
 
@@ -93,7 +92,6 @@ public class ClienteRestController {
 			response.put("mensaje", "error, no se pudo editar. El cliente ".concat(id.toString())
 					.concat(" no existe en la base de datos"));
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.NOT_FOUND);
-
 		}
 
 		try {
@@ -117,12 +115,11 @@ public class ClienteRestController {
 	}
 
 	@DeleteMapping({ "/clientes/{id}" })
-	///@ResponseStatus(HttpStatus.NO_CONTENT)
+	/// @ResponseStatus(HttpStatus.NO_CONTENT)
 	public ResponseEntity<?> delete(@PathVariable Long id) {
 
-		
 		Map<String, Object> response = new HashMap<>();
-		
+
 		try {
 			clienteService.delete(id);
 
@@ -131,11 +128,10 @@ public class ClienteRestController {
 			response.put("error", e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		
+
 		response.put("mensaje", "El cliente ha sido eliminado con exito!");
-		//response.put("cliente", "Cliente eliminado con exito");
-		
-		
+		// response.put("cliente", "Cliente eliminado con exito");
+
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
 
 	}
